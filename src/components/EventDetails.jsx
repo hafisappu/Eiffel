@@ -9,7 +9,8 @@ export const EventDetails = () => {
 
   // Address exactly as specified
   const venueAddress = "Mannankavu, Near Kerafed Junction, Naduvannur";
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venueAddress)}`;
+  // Google Maps directions URL provided by user
+  const googleMapsUrl = "https://maps.app.goo.gl/fKxAvN42qrbwciXx9?g_st=iw";
 
   // Function to download .ics file or open Google Calendar
   const handleAddToCalendar = () => {
