@@ -4,12 +4,6 @@ import { ArabesqueMedallion, GoldDivider } from './DecorativeDividers';
 import { RotateCcw } from 'lucide-react';
 
 export const BestCompliments = ({ onReplay }) => {
-  const compliments = [
-    "Kadeeja Alikutty",
-    "Rinshad T. K.",
-    "Sargam Family"
-  ];
-
   return (
     <footer className="relative w-full max-w-2xl mx-auto px-4 sm:px-6 pt-6 pb-16 text-center">
       {/* Top delicate divider with subtle gold ornament */}
@@ -25,28 +19,19 @@ export const BestCompliments = ({ onReplay }) => {
         <ArabesqueMedallion className="w-8 h-8 text-[#B49A65] mb-3" />
 
         {/* Section Heading */}
-        <span className="text-[11px] font-cinzel uppercase tracking-[0.3em] text-[#82786C] font-semibold mb-6">
+        <span className="text-[11px] font-cinzel uppercase tracking-[0.3em] text-[#82786C] font-semibold mb-4">
           With Best Compliments From
         </span>
 
-        {/* List of compliments */}
-        <div className="space-y-2 mb-8">
-          {compliments.map((name, index) => (
-            <motion.p
-              key={name}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="font-serif text-xl sm:text-2xl text-[#3E342B] font-medium tracking-wide"
-            >
-              {name}
-            </motion.p>
-          ))}
+        {/* Friends & Family */}
+        <div className="mb-6">
+          <p className="font-serif text-2xl sm:text-3xl text-[#3E342B] font-medium tracking-wide">
+            Friends &amp; Family
+          </p>
         </div>
 
         {/* Subtle decorative line */}
-        <div className="w-12 h-[1px] bg-[#DDD0BB] my-4" />
+        <div className="w-12 h-[1px] bg-[#DDD0BB] my-3" />
 
         {/* Closing Warm Message */}
         <p className="font-serif italic text-base sm:text-lg text-[#82786C] max-w-md mx-auto leading-relaxed px-4 mb-10">
